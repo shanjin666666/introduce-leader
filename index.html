@@ -66,11 +66,16 @@
       padding: 0;
     }
     .card {
-      background: #f7f8fa;
+      background: linear-gradient(120deg, #ffffffcc 60%, #e3f8ff 100%);
       border-radius: 14px;
       box-shadow: 0 2px 8px rgba(90,79,207,0.06);
       padding: 18px 16px 14px 16px;
       margin-bottom: 12px;
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(90,79,207,0.13);
+      background: linear-gradient(120deg, #f0fff7 60%, #d2f1ff 100%);
     }
     .card img, .card video {
       max-width: 100%;
